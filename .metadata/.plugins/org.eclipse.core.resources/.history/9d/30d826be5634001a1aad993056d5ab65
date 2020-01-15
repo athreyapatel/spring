@@ -1,0 +1,14 @@
+package com.rakuten.prj.client;
+
+public class ArticleClient {
+
+	public ArticleClient() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

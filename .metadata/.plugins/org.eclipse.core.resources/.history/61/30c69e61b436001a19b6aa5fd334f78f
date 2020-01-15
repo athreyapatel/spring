@@ -1,0 +1,9 @@
+package com.rakuten.prj.dao;
+
+public class TicketDaoJpaImpl {
+
+	public TicketDaoJpaImpl() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

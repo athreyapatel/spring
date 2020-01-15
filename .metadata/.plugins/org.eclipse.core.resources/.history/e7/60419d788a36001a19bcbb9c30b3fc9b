@@ -1,0 +1,5 @@
+package com.rakuten.prj.dao;
+
+public interface OrderDao {
+
+}

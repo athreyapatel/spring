@@ -1,0 +1,47 @@
+package com.rakuten.prj.entity;
+
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+
+@Entity()
+@Table(name="tickets")
+public class Tickets {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="ticket_id")
+	private int tId;
+	
+	@ManyToOne
+	@JoinColumn(name="raisedby_fk")
+	private Employee employee;
+	
+	@Column(name="order_date")
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date orderDate= new Date();
+	
+	@Column(name="ticket_description")
+	private String ticketDesc;
+	
+	@ManyToOne
+	@JoinColumn(name="resolved_by")
+	private Employee resolvedByEmployee;
+	
+	@Column(name="resolved_date")
+	private Date resolvedDate= new Date();
+	
+	@Column(name="resolved_description",length=100)
+	private String resolvedDesc;
+	
+}
+

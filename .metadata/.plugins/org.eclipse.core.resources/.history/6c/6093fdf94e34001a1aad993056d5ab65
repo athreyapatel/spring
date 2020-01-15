@@ -1,0 +1,101 @@
+package com.rakuten.prj.entity;
+
+public class Triplet implements Comparable<Triplet> {
+	/**
+	 * @return the first
+	 */
+	public int getFirst() {
+		return first;
+	}
+
+
+	/**
+	 * @param first the first to set
+	 */
+	public void setFirst(int first) {
+		this.first = first;
+	}
+
+
+	/**
+	 * @return the second
+	 */
+	public int getSecond() {
+		return second;
+	}
+
+
+	/**
+	 * @param second the second to set
+	 */
+	public void setSecond(int second) {
+		this.second = second;
+	}
+
+
+	/**
+	 * @return the sum
+	 */
+	public int getSum() {
+		return sum;
+	}
+
+
+	/**
+	 * @param sum the sum to set
+	 */
+	public void setSum(int sum) {
+		this.sum = sum;
+	}
+
+
+	private int first;
+	private int second;
+	private int sum;
+	
+	
+	public Triplet(int first, int second, int sum) {
+		this.first = first;
+		this.second = second;
+		this.sum = sum;
+	}
+
+
+	@Override
+	public int compareTo(Triplet o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + first;
+		result = prime * result + second;
+		result = prime * result + sum;
+		return result;
+	}
+
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Triplet other = (Triplet) obj;
+		if (first != other.first)
+			return false;
+		if (second != other.second)
+			return false;
+		if (sum != other.sum)
+			return false;
+		return true;
+	}
+	
+	
+}

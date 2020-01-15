@@ -1,0 +1,15 @@
+package com.rakuten.prj.util;
+
+public class ArrayUtil {
+	public static int getSum(int[] data) {
+		return 0;
+	}
+	public static int getOccurence(int[] data, int no) {
+		return 0;
+	}
+	public void sort(int[] data) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

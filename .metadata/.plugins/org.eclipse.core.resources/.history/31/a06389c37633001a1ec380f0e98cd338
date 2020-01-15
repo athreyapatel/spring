@@ -1,0 +1,14 @@
+package com.rakuten.prj.util;
+
+public class ArrayUtil {
+
+	public ArrayUtil() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

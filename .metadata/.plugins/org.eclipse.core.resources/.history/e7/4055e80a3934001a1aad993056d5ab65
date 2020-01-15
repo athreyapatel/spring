@@ -1,0 +1,14 @@
+package com.rakuten.prj.client;
+
+public class ListExample {
+
+	public ListExample() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

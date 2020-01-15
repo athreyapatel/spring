@@ -1,0 +1,14 @@
+package com.rakuten.prj.entity;
+
+public class Triplet {
+	private int first;
+	private int second;
+	private int sum;
+	
+	
+	public Triplet(int first, int second, int sum) {
+		this.first = first;
+		this.second = second;
+		this.sum = sum;
+	}
+}

@@ -1,0 +1,32 @@
+package com.rakuten.prj.client;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.rakuten.prj.cfg.AppConfig;
+import com.rakuten.prj.dao.CustomerDaoJpaImpl;
+import com.rakuten.prj.dao.OrderDaoJpaImpl;
+import com.rakuten.prj.dao.ProductDaoJpaImpl;
+import com.rakuten.prj.service.OrderService;
+
+public class TicketsClent {
+
+	public TicketsClent() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
+		// new ClassPathXMLApplicationContext("beans.xml");
+		ctx.register(TicketsService.class);
+		ctx.register(.class);
+		ctx.register(.class);
+		ctx.register(AppConfig.class);
+		ctx.refresh();
+
+		OrderService os = ctx.getBean("ticketService", TicketsService.class);
+		
+		System.out.println("Order Placed!!!!");
+		
+	}
+}

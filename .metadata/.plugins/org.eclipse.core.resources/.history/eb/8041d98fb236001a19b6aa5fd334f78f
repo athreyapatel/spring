@@ -1,0 +1,9 @@
+package com.rakuten.prj.client;
+
+public class ResolveTicketClient {
+
+	public ResolveTicketClient() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

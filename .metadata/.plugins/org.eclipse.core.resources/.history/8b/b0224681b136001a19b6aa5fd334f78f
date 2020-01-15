@@ -1,0 +1,234 @@
+package com.rakuten.prj.entity;
+
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+@Entity()
+@Table(name = "tickets")
+public class Tickets {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "ticket_id")
+	private int tId;
+
+	@ManyToOne
+	@JoinColumn(name = "raisedby_fk")
+	private Employee employee;
+
+	@Column(name = "order_date")
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date orderDate = new Date();
+
+	@Column(name = "ticket_description", length = 100)
+	private String ticketDesc;
+
+	@ManyToOne
+	@JoinColumn(name = "resolved_by")
+	private Employee resolvedByEmployee;
+
+	@Column(name = "resolved_date")
+	private Date resolvedDate = new Date();
+
+	@Column(name = "resolved_description", length = 100)
+	private String resolvedDesc;
+
+	/**
+	 * @param tId
+	 * @param employee
+	 * @param orderDate
+	 * @param ticketDesc
+	 * @param resolvedByEmployee
+	 * @param resolvedDate
+	 * @param resolvedDesc
+	 */
+	public Tickets(int tId, Employee employee, Date orderDate, String ticketDesc, Employee resolvedByEmployee,
+			Date resolvedDate, String resolvedDesc) {
+		this.tId = tId;
+		this.employee = employee;
+		this.orderDate = orderDate;
+		this.ticketDesc = ticketDesc;
+		this.resolvedByEmployee = resolvedByEmployee;
+		this.resolvedDate = resolvedDate;
+		this.resolvedDesc = resolvedDesc;
+	}
+
+	/**
+	 * 
+	 */
+	public Tickets() {
+	}
+
+	/**
+	 * @return the tId
+	 */
+	public int gettId() {
+		return tId;
+	}
+
+	/**
+	 * @param tId the tId to set
+	 */
+	public void settId(int tId) {
+		this.tId = tId;
+	}
+
+	/**
+	 * @return the employee
+	 */
+	public Employee getEmployee() {
+		return employee;
+	}
+
+	/**
+	 * @param employee the employee to set
+	 */
+	public void setEmployee(Employee employee) {
+		this.employee = employee;
+	}
+
+	/**
+	 * @return the orderDate
+	 */
+	public Date getOrderDate() {
+		return orderDate;
+	}
+
+	/**
+	 * @param orderDate the orderDate to set
+	 */
+	public void setOrderDate(Date orderDate) {
+		this.orderDate = orderDate;
+	}
+
+	/**
+	 * @return the ticketDesc
+	 */
+	public String getTicketDesc() {
+		return ticketDesc;
+	}
+
+	/**
+	 * @param ticketDesc the ticketDesc to set
+	 */
+	public void setTicketDesc(String ticketDesc) {
+		this.ticketDesc = ticketDesc;
+	}
+
+	/**
+	 * @return the resolvedByEmployee
+	 */
+	public Employee getResolvedByEmployee() {
+		return resolvedByEmployee;
+	}
+
+	/**
+	 * @param resolvedByEmployee the resolvedByEmployee to set
+	 */
+	public void setResolvedByEmployee(Employee resolvedByEmployee) {
+		this.resolvedByEmployee = resolvedByEmployee;
+	}
+
+	/**
+	 * @return the resolvedDate
+	 */
+	public Date getResolvedDate() {
+		return resolvedDate;
+	}
+
+	/**
+	 * @param resolvedDate the resolvedDate to set
+	 */
+	public void setResolvedDate(Date resolvedDate) {
+		this.resolvedDate = resolvedDate;
+	}
+
+	/**
+	 * @return the resolvedDesc
+	 */
+	public String getResolvedDesc() {
+		return resolvedDesc;
+	}
+
+	/**
+	 * @param resolvedDesc the resolvedDesc to set
+	 */
+	public void setResolvedDesc(String resolvedDesc) {
+		this.resolvedDesc = resolvedDesc;
+	}
+
+	@Override
+	public String toString() {
+		return "Tickets [tId=" + tId + ", employee=" + employee + ", orderDate=" + orderDate + ", ticketDesc="
+				+ ticketDesc + ", resolvedByEmployee=" + resolvedByEmployee + ", resolvedDate=" + resolvedDate
+				+ ", resolvedDesc=" + resolvedDesc + "]";
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((employee == null) ? 0 : employee.hashCode());
+		result = prime * result + ((orderDate == null) ? 0 : orderDate.hashCode());
+		result = prime * result + ((resolvedByEmployee == null) ? 0 : resolvedByEmployee.hashCode());
+		result = prime * result + ((resolvedDate == null) ? 0 : resolvedDate.hashCode());
+		result = prime * result + ((resolvedDesc == null) ? 0 : resolvedDesc.hashCode());
+		result = prime * result + tId;
+		result = prime * result + ((ticketDesc == null) ? 0 : ticketDesc.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Tickets other = (Tickets) obj;
+		if (employee == null) {
+			if (other.employee != null)
+				return false;
+		} else if (!employee.equals(other.employee))
+			return false;
+		if (orderDate == null) {
+			if (other.orderDate != null)
+				return false;
+		} else if (!orderDate.equals(other.orderDate))
+			return false;
+		if (resolvedByEmployee == null) {
+			if (other.resolvedByEmployee != null)
+				return false;
+		} else if (!resolvedByEmployee.equals(other.resolvedByEmployee))
+			return false;
+		if (resolvedDate == null) {
+			if (other.resolvedDate != null)
+				return false;
+		} else if (!resolvedDate.equals(other.resolvedDate))
+			return false;
+		if (resolvedDesc == null) {
+			if (other.resolvedDesc != null)
+				return false;
+		} else if (!resolvedDesc.equals(other.resolvedDesc))
+			return false;
+		if (tId != other.tId)
+			return false;
+		if (ticketDesc == null) {
+			if (other.ticketDesc != null)
+				return false;
+		} else if (!ticketDesc.equals(other.ticketDesc))
+			return false;
+		return true;
+	}
+
+}

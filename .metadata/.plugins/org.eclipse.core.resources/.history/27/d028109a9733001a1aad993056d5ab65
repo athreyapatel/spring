@@ -1,0 +1,50 @@
+package com.rakuten.prj.util;
+/**
+ * 
+ * 
+ */
+import java.util.Arrays;
+/**
+ * 
+ * @author athreya
+ *
+ */
+public class ArrayUtil {
+	/**
+	 * 
+	 * @param data
+	 * @return
+	 */
+	public static int getSum(int[] data) {
+		int sum = 0;
+		for (int i = 0; i < data.length; i++) {
+			sum = sum + data[i];
+		}
+		return sum;
+	}
+	/**
+	 * 
+	 * @param data
+	 * @param no
+	 * @return
+	 */
+	public static int getOccurence(int[] data, int no) {
+		int c = 0;
+		for (int i = 0; i<data.length; i++) {
+			
+			if (data[i] == no) {
+				c++;
+			}
+		}
+		return c;
+	}
+	/**
+	 * 
+	 * @param data
+	 */
+	public static void sort(int[] data) {
+		// TODO Auto-generated method stub
+		Arrays.sort(data);
+	}
+
+}

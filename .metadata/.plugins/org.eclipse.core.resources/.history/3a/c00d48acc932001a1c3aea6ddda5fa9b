@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.rakuten.prj.entity;
+
+/**
+ * @author athreya
+ *
+ */
+public class Product {
+
+}

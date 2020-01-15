@@ -1,0 +1,9 @@
+package com.rakuten.prj.service;
+
+public class TicketsService {
+
+	public TicketsService() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,67 @@
+/**
+ * 
+ */
+package com.rakuten.prj.entity;
+
+/**
+ * @author athreya
+ *
+ */
+public class Mobile extends Product {
+	private String connectivity;
+	
+	/**
+	 * 
+	 */
+	public Mobile() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	
+	
+	/**
+	 * @param id
+	 * @param name
+	 * @param price
+	 */
+	public Mobile(int id, String name, double price) {
+		super(id, name, price);
+		// TODO Auto-generated constructor stub
+	}
+
+
+
+
+	/**
+	 * @return the connectivity
+	 */
+	public String getConnectivity() {
+		return connectivity;
+	}
+
+
+
+
+	/**
+	 * @param connectivity the connectivity to set
+	 */
+	public void setConnectivity(String connectivity) {
+		this.connectivity = connectivity;
+	}
+
+
+
+
+	@Override
+	public Boolean isExpensive() {
+		// TODO Auto-generated method stub
+		if("3G".contentEquals(connectivity) && getPrice()>5000) {
+			return true;
+		}else if("4G".contentEquals(connectivity) && getPrice()>15000) {
+			return true;
+		}
+		return false;
+	}
+	
+}

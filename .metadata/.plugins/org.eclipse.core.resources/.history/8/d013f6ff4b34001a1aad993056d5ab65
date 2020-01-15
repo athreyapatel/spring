@@ -1,0 +1,95 @@
+package com.rakuten.prj.util;
+
+import java.util.ArrayList;
+/**
+ * 
+ * 
+ */
+import java.util.Arrays;
+import java.util.List;
+
+import com.rakuten.prj.entity.Triplet;
+
+/**
+ * 
+ * @author athreya
+ *
+ */
+final class ArrayUtil {
+	private ArrayUtil() {
+	}
+
+	/**
+	 * 
+	 * @param data
+	 * @return
+	 */
+	public static int getSum(int[] data) {
+		int sum = 0;
+		for (int i = 0; i < data.length; i++) {
+			sum = sum + data[i];
+		}
+		return sum;
+	}
+
+	/**
+	 * 
+	 * @param data
+	 * @param no
+	 * @return
+	 */
+	public static int getOccurence(int[] data, int no) {
+		int c = 0;
+		for (int i = 0; i < data.length; i++) {
+
+			if (data[i] == no) {
+				c++;
+			}
+		}
+		return c;
+	}
+
+	/**
+	 * 
+	 * @param data
+	 */
+	public static void sort(int[] data) {
+		// TODO Auto-generated method stub
+		Arrays.sort(data);
+	}
+
+	/**
+	 * 
+	 * @param items
+	 */
+	public static void sort(Comparable[] items) {
+		for (int i = 0; i < items.length; i++) {
+			for (int j = 0; j < items.length; j++) {
+				if (items[i].compareTo(items[j]) > 0) {
+					Comparable temp = items[i];
+					items[i] = items[j];
+					items[j] = temp;
+				}
+			}
+		}
+	}
+
+	public static List<Triplet> printTriplets(int[] data) {
+		List<Triplet> list= new ArrayList<>();
+		for (int i = 0; i < data.length-1; i++) {
+			for (int j = i+1; j < data.length-1; j++) {
+				for (int j2 = 0; j2 < data.length; j2++) {
+					if((data[i]+data[i+1])==data[j]) {
+						System.out.println(data[i]+","+data[i+1]+","+data[j]);
+					}
+				}
+			}
+		}
+		return list;
+	}
+	public static void main(String[] args) {
+		int[] data= { 2,3,4,5,7};
+		printTriplets(data);
+	}
+
+}

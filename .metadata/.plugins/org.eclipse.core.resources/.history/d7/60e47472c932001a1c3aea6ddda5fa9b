@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+package com.rakuten.prj.entity;
+
+/**
+ * @author athreya
+ *
+ */
+public class Mobile extends Product {
+
+	/**
+	 * 
+	 */
+	public Mobile() {
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @param id
+	 * @param name
+	 * @param price
+	 */
+	public Mobile(int id, String name, double price) {
+		super(id, name, price);
+		// TODO Auto-generated constructor stub
+	}
+
+}

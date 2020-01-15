@@ -1,0 +1,28 @@
+//new creates objects on heap area
+//upcasting-parent has prop of child
+//upcasted pointer will only refer to parent but only if the child has parents method overrided
+//Liskov principle
+//perspective is collection of views
+
+/** This is a API comment/JAVA doc comments
+
+
+*/
+
+Anonumous Class
+Classes created wo a name created from interfaces
+
+One method to implement in interface then functional interface
+
+<inside, this> is generic type 
+inp and op may not be the same
+
+
+cmd+shift+f = to format 
+cmd+shift+o = to remove unnecessery imports
+
+equals and equalsto difference
+
+
+hashcode is numerical rep of obj
+any data storing in hashcode should contain hashcode() and equals()

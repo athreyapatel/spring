@@ -1,0 +1,9 @@
+package com.rakuten.prj.client;
+
+public class TicketsClent {
+
+	public TicketsClent() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

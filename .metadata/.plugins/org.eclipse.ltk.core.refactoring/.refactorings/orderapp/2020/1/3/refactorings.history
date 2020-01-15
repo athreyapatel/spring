@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.rakuten.prj.cfg&apos; to &apos;dir/src/main/java&apos;&#x0A;- Original project: &apos;orderapp&apos;&#x0A;- Destination element: &apos;dir/src/main/java&apos;&#x0A;- Original element: &apos;orderapp/src/main/java/com.rakuten.prj.cfg&apos;" description="Copy package" destination="=dir/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.rakuten.prj.cfg" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1578984617059" version="1.0"/>
+</session>

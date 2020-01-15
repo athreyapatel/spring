@@ -1,0 +1,9 @@
+package com.rakuten.prj.client;
+
+public class HashExampple {
+
+	public HashExampple() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,22 @@
+package com.rakuten.prj.dao;
+
+import java.util.List;
+
+import com.rakuten.prj.entity.Order;
+
+public class OrderDaoJpaImpl implements OrderDao{
+
+	@Override
+	public void placeOrder(Order order) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<Order> getOrders() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+}

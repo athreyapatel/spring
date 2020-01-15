@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;AppConfig.java&apos; to &apos;hotelapp/src/main/java/com.rakuten.prj.cfg&apos;&#x0A;- Original project: &apos;dir&apos;&#x0A;- Destination element: &apos;hotelapp/src/main/java/com.rakuten.prj.cfg&apos;&#x0A;- Original element: &apos;com.rakuten.prj.cfg.AppConfig.java&apos;" description="Copy compilation unit" destination="=hotelapp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.rakuten.prj.cfg" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.rakuten.prj.cfg{AppConfig.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1579001407089" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,9 @@
+package com.rakuten.prj.entity;
+
+public class Order {
+
+	public Order() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

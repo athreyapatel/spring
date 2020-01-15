@@ -1,0 +1,6 @@
+package com.rakuten.prj.dao;
+
+public class OrderDaoJpaImpl implements OrderDao{
+
+	
+}

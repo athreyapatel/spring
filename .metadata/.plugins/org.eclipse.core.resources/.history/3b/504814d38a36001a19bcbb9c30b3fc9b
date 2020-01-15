@@ -1,0 +1,9 @@
+package com.rakuten.prj.dao;
+
+public class OrderDaoJpaImpl {
+
+	public OrderDaoJpaImpl() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

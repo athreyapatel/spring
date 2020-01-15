@@ -1,0 +1,9 @@
+package com.rakuten.prj.dao;
+
+public class MobileDaoMySQLImpl {
+
+	public MobileDaoMySQLImpl() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

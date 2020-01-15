@@ -1,0 +1,9 @@
+package com.rakuten.prj.client;
+
+public class LambdaExample {
+
+	public LambdaExample() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

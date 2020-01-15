@@ -1,0 +1,9 @@
+package com.rakuten.prj.util;
+
+public class ProductTest {
+
+	public ProductTest() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

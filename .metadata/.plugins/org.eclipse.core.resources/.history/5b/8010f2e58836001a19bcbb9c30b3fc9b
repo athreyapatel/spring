@@ -1,0 +1,9 @@
+package com.rakuten.prj.entity;
+
+public class LineItem {
+
+	public LineItem() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

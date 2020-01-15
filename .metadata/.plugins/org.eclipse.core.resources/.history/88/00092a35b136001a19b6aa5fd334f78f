@@ -1,0 +1,11 @@
+package com.rakuten.prj.dao;
+
+import java.util.List;
+
+import com.rakuten.prj.entity.Tickets;
+
+public interface TicketDao {
+	void addTickets(Tickets c);
+	Tickets getTickets(String email);
+	List<Tickets> getTicketss();
+}

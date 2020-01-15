@@ -1,0 +1,9 @@
+package com.rakuten.prj.client;
+
+public class EmployeeInsertClient {
+
+	public EmployeeInsertClient() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

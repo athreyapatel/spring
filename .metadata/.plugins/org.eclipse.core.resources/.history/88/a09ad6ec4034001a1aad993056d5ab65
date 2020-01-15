@@ -1,0 +1,5 @@
+package com.rakuten.prj.entity;
+
+public class Triplet {
+
+}

@@ -1,0 +1,24 @@
+package com.rakuten.prj.util;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class ArrayUtilTest {
+
+	@Test
+	void testGetSum() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetOccurence() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSort() {
+		fail("Not yet implemented");
+	}
+
+}
